@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NSW Shark Deterrent Rebate</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f8f9;
+            margin: 0;
+            padding: 0;
+            color: #123;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 820px;
+            margin: 0 auto;
+            padding: 22px;
+        }
+
+        .card {
+            background: white;
+            padding: 28px;
+            border-radius: 16px;
+            box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+            margin-bottom: 24px;
+        }
+
+        h1,
+        h2 {
+            color: #063b46;
+            margin-top: 0;
+        }
+
+        .highlight {
+            background: #e7f7f8;
+            padding: 18px;
+            border-radius: 12px;
+            margin-top: 18px;
+        }
+
+        .counter {
+            font-size: 18px;
+            font-weight: bold;
+            background: #063b46;
+            color: white;
+            padding: 14px;
+            border-radius: 12px;
+            display: inline-block;
+            margin-top: 12px;
+        }
+
+        label {
+            display: block;
+            margin-top: 16px;
+            font-weight: bold;
+        }
+
+        input,
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            margin-top: 6px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+
+        textarea {
+            min-height: 110px;
+        }
+
+        button {
+            margin-top: 18px;
+            padding: 14px 18px;
+            border: none;
+            border-radius: 10px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            background: #007c89;
+            color: white;
+        }
+
+        button.secondary {
+            background: #253238;
+            margin-right: 8px;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .mp-box {
+            background: #e7f7f8;
+            padding: 18px;
+            border-radius: 12px;
+            margin-top: 16px;
+        }
+
+        pre {
+            white-space: pre-wrap;
+            background: #f2f2f2;
+            padding: 16px;
+            border-radius: 12px;
+            font-family: Arial, sans-serif;
+            line-height: 1.5;
+            overflow-wrap: break-word;
+        }
+
+        .note {
+            font-size: 14px;
+            color: #555;
+            margin-top: 16px;
+        }
+
+        a {
+            color: #007c89;
+            font-weight: bold;
+        }
+
+        ul {
+            padding-left: 22px;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 14px;
+            }
+
+            .card {
+                padding: 20px;
+            }
+
+            button {
+                width: 100%;
+                margin-right: 0;
+            }
+
+            button.secondary {
+                margin-right: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="card">
+            <h1>Support a NSW Shark Deterrent Rebate</h1>
+
+            <p><strong>Generate a personalised email to your local NSW State MP in under 60 seconds.</strong></p>
+
+            <p>
+                Western Australia already provides rebates for approved shark deterrent devices.
+                We are asking the NSW Government to introduce a similar rebate scheme to help make proven safety
+                technology
+                more accessible to surfers, divers, spearfishers and other ocean users.
+            </p>
+
+            <div class="highlight">
+                <strong>Why this matters</strong>
+                <p>
+                    A proposal for a NSW shark deterrent rebate scheme has already been raised with local
+                    representatives
+                    and referred to the Minister for Environment for consideration.
+                </p>
+                <p>
+                    This page exists to make it easy for NSW ocean users to contact their local MPs and demonstrate
+                    broader
+                    community support.
+                </p>
+            </div>
+
+            <p class="counter">Emails generated so far: 0</p>
+            <p class="note">You can manually update this number later if you want to show momentum.</p>
+        </div>
+
+        <div class="card">
+            <h2>How This Started</h2>
+
+            <p>
+                Following recent shark incidents in NSW, a local ocean user contacted their local representative
+                requesting
+                a NSW shark deterrent rebate scheme similar to Western Australia's program.
+            </p>
+
+            <p>
+                The proposal was supported locally, referred to the local State MP, and has since been raised with the
+                Minister for Environment for consideration.
+            </p>
+
+            <p>
+                The next step is to show that this idea has support from ocean users across NSW.
+            </p>
+        </div>
+
+        <div class="card">
+            <h2>Why a Rebate?</h2>
+
+            <ul>
+                <li>Western Australia already provides rebates for approved shark deterrent devices.</li>
+                <li>These devices can cost hundreds of dollars.</li>
+                <li>NSW already invests in shark mitigation measures such as drones, tagging and public education.</li>
+                <li>A rebate would help make proven personal safety technology more accessible to ocean users.</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>Generate Your Email</h2>
+
+            <label for="fullName">Full Name</label>
+            <input id="fullName" type="text" placeholder="Your name" />
+
+            <label for="suburb">Suburb</label>
+            <input id="suburb" type="text" placeholder="e.g. Shell Cove" />
+
+            <label for="postcode">Postcode</label>
+            <input id="postcode" type="text" placeholder="e.g. 2529" />
+
+            <label for="activity">Ocean Activity</label>
+            <select id="activity">
+                <option value="">Select one</option>
+                <option>Surfing</option>
+                <option>Diving</option>
+                <option>Spearfishing</option>
+                <option>Swimming</option>
+                <option>Ocean Fishing</option>
+                <option>Surf Life Saving</option>
+                <option>Other</option>
+            </select>
+
+            <label for="comment">Why is this issue important to you? Optional</label>
+            <textarea id="comment"
+                placeholder="Example: I surf several times a week with my family and believe proven safety technology should be more affordable for NSW ocean users."></textarea>
+
+            <button onclick="generateEmail()">Generate My Email</button>
+        </div>
+
+        <div id="result" class="card hidden">
+            <h2>Your Local NSW State MP</h2>
+
+            <div class="mp-box">
+                <p><strong id="mpName"></strong></p>
+                <p id="mpSeat"></p>
+                <p id="mpEmail"></p>
+            </div>
+
+            <h2>Subject</h2>
+            <pre id="emailSubject"></pre>
+
+            <h2>Your Personalised Email</h2>
+            <pre id="emailBody"></pre>
+
+            <button class="secondary" onclick="copyEmail()">Copy Email</button>
+            <button onclick="openEmailApp()">Open Email App</button>
+
+            <p class="note">
+                This tool does not send emails automatically. Please review the email before sending.
+            </p>
+        </div>
+
+        <div class="card">
+            <h2>Useful Links</h2>
+
+            <p>
+                WA Shark Deterrent Rebate Scheme:<br>
+                <a href="https://www.wa.gov.au/organisation/department-of-primary-industries-and-regional-development/shark-deterrent-rebate"
+                    target="_blank">
+                    View WA rebate information
+                </a>
+            </p>
+
+            <p>
+                Rpela Shark Deterrent Device:<br>
+                <a href="https://www.rpela.com/shop" target="_blank">
+                    View Rpela device
+                </a>
+            </p>
+
+            <p>
+                NSW Shark Management Program:<br>
+                <a href="https://www.dpi.nsw.gov.au/fishing/sharks/shark-management" target="_blank">
+                    View NSW Shark Management Program
+                </a>
+            </p>
+        </div>
+
+    </div>
+
+    <script>
+        const mpDatabase = [
+            {
+                postcodes: ["2485", "2486", "2487", "2488", "2489"],
+                suburbs: ["tweed heads", "kingscliff", "pottsville", "cabarita", "murwillumbah"],
+                electorate: "Tweed",
+                mp: "Geoff Provest",
+                email: "tweed@parliament.nsw.gov.au"
+            },
+            {
+                postcodes: ["2478", "2479", "2480", "2481", "2482", "2483"],
+                suburbs: ["ballina", "lennox head", "byron bay", "mullumbimby", "brunswick heads"],
+                electorate: "Ballina",
+                mp: "Tamara Smith",
+                email: "ballina@parliament.nsw.gov.au"
+            },
+            {
+                postcodes: ["2460", "2462", "2463", "2464"],
+                suburbs: ["grafton", "yamba", "maclean", "iluka", "angourie"],
+                electorate: "Clarence",
+                mp: "Richie Williamson",
+                email: "clarence@parliament.nsw.gov.au"
+            },
+            {
+                postcodes: ["2450", "2452", "2456"],
+                suburbs: ["coffs harbour", "sawtell", "toormina", "woolgoolga", "emerald beach"],
+                electorate: "Coffs Harbour",
+                mp: "Gurmesh Singh",
+                email: "coffsharbour@parliament.nsw.gov.au"
+            },
+            {
+                postcodes: ["2444", "2445"],
+                suburbs: ["port macquarie", "lake cathie", "bonny hills", "wauchope"],
+                electorate: "Port Macquarie",
+                mp: "Robert Dwyer",
+                email: "portmacquarie@parliament.nsw.gov.au"
+            },
+            {
+                postcodes: ["2428", "2429", "2430"],
+                suburbs: ["forster", "tuncurry", "taree", "old bar", "hawks nest", "tea gardens"],
+                electorate: "Myall Lakes",
+                mp: "Tanya Thompson",
+                email: "myalllakes@parliament.nsw.gov.au"
+            },
+            {
+                postcodes: ["2315", "2316", "2317", "2318", "2319"],
+                suburbs: ["nelson bay", "shoal bay", "anna bay", "soldiers point", "medowie"],
+                electorate: "Port Stephens",
+                mp: "Kate Washington",
+                email: "portstephens@parliament.nsw.gov.au"
+            },
+            {
+                postcodes: ["2280", "2281", "2282", "2283"],
+                suburbs: ["swansea", "caves beach", "belmont", "marks point", "blacksmiths"],
+                electorate: "Swansea",
+                mp: "Yasmin Catley",
+                email: "swansea@parliament.nsw.gov.au"
+            },
+            {
+                postcodes: ["2260", "2261", "2262"],
+                suburbs: ["terrigal", "wamberal", "the entrance", "long jetty", "berkeley vale"],
+                electorate: "Terrigal",
+                mp: "Adam Crouch",
+                email: "terrigal@parliament.nsw.gov.au"
+            },
+            {
+                postcodes: ["2250", "2251"],
+                suburbs: ["gosford", "erina", "woy woy", "umina beach", "ettalong beach"],
+                electorate: "Gosford",
+                mp: "Liesl Tesch",
+                email: "gosford@parliament.nsw.gov.au"
+            },
+            {
+                postcodes: ["2095", "2096", "2097"],
+                suburbs: ["manly", "freshwater", "curl curl", "queenscliff", "fairlight"],
+                electorate: "Manly",
+                mp: "James Griffin",
+                email: "manly@parliament.nsw.gov.au"
+            },
+            {
+                postcodes: ["2024", "2026", "2031", "2034"],
+                suburbs: ["coogee", "bondi", "bronte", "clovelly", "randwick"],
+                electorate: "Coogee",
+                mp: "Marjorie O'Neill",
+                email: "coogee@parliament.nsw.gov.au"
+            },
+            {
+                postcodes: ["2230", "2229"],
+                suburbs: ["cronulla", "woolooware", "burraneer", "kurnell", "caringbah"],
+                electorate: "Cronulla",
+                mp: "Mark Speakman",
+                email: "cronulla@parliament.nsw.gov.au"
+            },
+            {
+                postcodes: ["2500", "2502", "2505"],
+                suburbs: ["wollongong", "figtree", "port kembla", "cringila", "coniston"],
+                electorate: "Wollongong",
+                mp: "Paul Scully",
+                email: "wollongong@parliament.nsw.gov.au"
+            },
+            {
+                postcodes: ["2527", "2528", "2529", "2530"],
+                suburbs: ["shellharbour", "shell cove", "flinders", "oak flats", "albion park", "warilla"],
+                electorate: "Shellharbour",
+                mp: "Anna Watson",
+                email: "shellharbour@parliament.nsw.gov.au"
+            },
+            {
+                postcodes: ["2533", "2534"],
+                suburbs: ["kiama", "gerroa", "gerringong", "jamberoo", "kiama downs", "minnamurra"],
+                electorate: "Kiama",
+                mp: "Gareth Ward",
+                email: "kiama@parliament.nsw.gov.au"
+            },
+            {
+                postcodes: ["2535", "2538", "2539", "2540", "2541"],
+                suburbs: ["nowra", "berry", "shoalhaven heads", "ulladulla", "mollymook", "jervis bay", "vincentia", "huskisson"],
+                electorate: "South Coast",
+                mp: "Liza Butler",
+                email: "southcoast@parliament.nsw.gov.au"
+            },
+            {
+                postcodes: ["2546", "2548", "2549", "2550", "2551"],
+                suburbs: ["narooma", "bermagui", "tathra", "merimbula", "eden", "bega"],
+                electorate: "Bega",
+                mp: "Michael Holland",
+                email: "bega@parliament.nsw.gov.au"
+            }
+        ];
+
+        let currentEmail = "";
+        let currentSubject = "";
+        let currentMpEmail = "";
+
+        function findMP(suburb, postcode) {
+            suburb = suburb.toLowerCase().trim();
+            postcode = postcode.trim();
+
+            return mpDatabase.find(entry =>
+                entry.postcodes.includes(postcode) ||
+                entry.suburbs.includes(suburb)
+            );
+        }
+
+        function generateEmail() {
+            const fullName = document.getElementById("fullName").value.trim();
+            const suburb = document.getElementById("suburb").value.trim();
+            const postcode = document.getElementById("postcode").value.trim();
+            const activity = document.getElementById("activity").value;
+            const comment = document.getElementById("comment").value.trim();
+
+            if (!fullName || !suburb || !postcode || !activity) {
+                alert("Please complete your name, suburb, postcode and ocean activity.");
+                return;
+            }
+
+            const mp = findMP(suburb, postcode);
+
+            if (!mp) {
+                currentSubject = "Request for NSW Shark Deterrent Rebate Program";
+                currentMpEmail = "";
+
+                currentEmail =
+                    `Dear Local Member,
+
+      I am writing as a resident of ${suburb}, NSW, and as someone who participates in ${activity.toLowerCase()}, to request your support in advocating for a New South Wales Government rebate program for independently tested personal shark deterrent devices for surfers, divers, spearfishers and other ocean users.
+
+      Recent shark incidents across NSW have understandably increased concern within coastal communities. While no deterrent can completely eliminate risk, there is growing evidence that certain electronic shark deterrent devices can significantly reduce the likelihood of a shark bite.
+
+      Western Australia has already led the way with a government-funded shark deterrent rebate scheme, providing financial assistance for approved personal shark deterrent devices. I believe NSW ocean users should be given similar support.
+
+      I respectfully ask that you support consideration of a NSW shark deterrent rebate scheme and raise this issue with the relevant Minister.
+
+      Kind regards,
+
+      ${fullName}`;
+
+                document.getElementById("mpName").innerText = "We couldn’t confidently match your MP";
+                document.getElementById("mpSeat").innerText = "Please use the NSW electorate finder link below.";
+                document.getElementById("mpEmail").innerHTML =
+                    '<a href="https://elections.nsw.gov.au/elections/find-my-electorate" target="_blank">Find your electorate here</a>';
+
+                document.getElementById("emailSubject").innerText = currentSubject;
+                document.getElementById("emailBody").innerText = currentEmail;
+                document.getElementById("result").classList.remove("hidden");
+                document.getElementById("result").scrollIntoView({ behavior: "smooth" });
+
+                return;
+            }
+
+            currentSubject = "Request for NSW Shark Deterrent Rebate Program";
+            currentMpEmail = mp.email;
+
+            const commentSentence = comment
+                ? `As someone who regularly uses the ocean, this issue is important to me because ${comment}`
+                : `As someone who regularly uses the ocean, this issue is important to me and my community.`;
+
+            currentEmail =
+                `Dear ${mp.mp},
+
+I am writing as a resident of ${suburb}, NSW, and as someone who participates in ${activity.toLowerCase()}, to request your support in advocating for a New South Wales Government rebate program for independently tested personal shark deterrent devices for surfers, divers, spearfishers and other ocean users.
+
+Recent shark incidents across NSW have understandably increased concern within coastal communities. While no deterrent can completely eliminate risk, there is growing evidence that certain electronic shark deterrent devices can significantly reduce the likelihood of a shark bite.
+
+Western Australia has already led the way with a government-funded shark deterrent rebate scheme, providing financial assistance for approved personal shark deterrent devices. I believe NSW ocean users should be given similar support.
+
+${commentSentence}
+
+Given the NSW Government's ongoing investment in shark mitigation measures such as drone surveillance, tagging and public education, I believe a rebate program for personal deterrent devices would be a practical and proactive addition to the state's shark management strategy.
+
+A rebate similar to Western Australia's program would encourage more surfers, divers, spearfishers and ocean users to adopt proven safety technology, particularly younger ocean users and families who may otherwise find the upfront cost prohibitive.
+
+I respectfully ask that you support consideration of a NSW shark deterrent rebate scheme and raise this issue with the relevant Minister.
+
+Relevant information:
+
+WA Shark Deterrent Rebate Scheme:
+https://www.wa.gov.au/organisation/department-of-primary-industries-and-regional-development/shark-deterrent-rebate
+
+Rpela Shark Deterrent Device:
+https://www.rpela.com/shop
+
+NSW Shark Management Program:
+https://www.dpi.nsw.gov.au/fishing/sharks/shark-management
+
+Thank you for your time and consideration. I would appreciate any information regarding whether this proposal has been discussed or is being considered by the NSW Government.
+
+Kind regards,
+
+${fullName}`;
+
+            document.getElementById("mpName").innerText = mp.mp;
+            document.getElementById("mpSeat").innerText = "Member for " + mp.electorate;
+            document.getElementById("mpEmail").innerText = mp.email;
+            document.getElementById("emailSubject").innerText = currentSubject;
+            document.getElementById("emailBody").innerText = currentEmail;
+            document.getElementById("result").classList.remove("hidden");
+            document.getElementById("result").scrollIntoView({ behavior: "smooth" });
+        }
+
+        function copyEmail() {
+            navigator.clipboard.writeText("Subject: " + currentSubject + "\n\n" + currentEmail);
+            alert("Email copied. Paste it into your email app.");
+        }
+
+        function openEmailApp() {
+            const mailtoLink =
+                "mailto:" + encodeURIComponent(currentMpEmail) +
+                "?subject=" + encodeURIComponent(currentSubject) +
+                "&body=" + encodeURIComponent(currentEmail);
+
+            window.location.href = mailtoLink;
+        }
+    </script>
+
+</body>
+
+</html>
