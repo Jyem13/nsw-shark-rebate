@@ -225,17 +225,17 @@
             <label for="postcode">Postcode</label>
             <input id="postcode" type="text" placeholder="e.g. 2529" />
 
-            <label for="activity">Ocean Activity</label>
-            <select id="activity">
-                <option value="">Select one</option>
-                <option>Surfing</option>
-                <option>Diving</option>
-                <option>Spearfishing</option>
-                <option>Swimming</option>
-                <option>Ocean Fishing</option>
-                <option>Surf Life Saving</option>
-                <option>Other</option>
-            </select>
+            <label>Ocean Activities</label>
+
+       <div class="checkbox-group">
+            <label><input type="checkbox" name="activity" value="surfing"> Surfing</label>
+            <label><input type="checkbox" name="activity" value="diving"> Diving</label>
+            <label><input type="checkbox" name="activity" value="spearfishing"> Spearfishing</label>
+            <label><input type="checkbox" name="activity" value="swimming"> Swimming</label>
+            <label><input type="checkbox" name="activity" value="ocean fishing"> Ocean Fishing</label>
+            <label><input type="checkbox" name="activity" value="surf life saving"> Surf Life Saving</label>
+            <label><input type="checkbox" name="activity" value="other ocean activities"> Other</label>
+       </div>
 
             <label for="comment">Why is this issue important to you? Optional</label>
             <textarea id="comment"
@@ -443,10 +443,13 @@
             const fullName = document.getElementById("fullName").value.trim();
             const suburb = document.getElementById("suburb").value.trim();
             const postcode = document.getElementById("postcode").value.trim();
-            const activity = document.getElementById("activity").value;
+            const selectedActivities = Array.from(document.querySelectorAll('input[name="activity"]:checked'))
+              .map(box => box.value);
+
+            const activity = selectedActivities.join(", ");
             const comment = document.getElementById("comment").value.trim();
 
-            if (!fullName || !suburb || !postcode || !activity) {
+            if (!fullName || !suburb || !postcode || selectedActivities.length === 0) {
                 alert("Please complete your name, suburb, postcode and ocean activity.");
                 return;
             }
