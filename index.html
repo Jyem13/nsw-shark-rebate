@@ -128,7 +128,11 @@
         ul {
             padding-left: 22px;
         }
-
+        .checkbox-group label {
+          display: block;
+          font-weight: normal;
+          margin-top: 8px;
+        }
         @media (max-width: 600px) {
             .container {
                 padding: 14px;
@@ -446,7 +450,17 @@
             const selectedActivities = Array.from(document.querySelectorAll('input[name="activity"]:checked'))
               .map(box => box.value);
 
-            const activity = selectedActivities.join(", ");
+            let activity = "";
+            if (selectedActivities.length === 1) {
+              activity = selectedActivities[0];
+            } else if (selectedActivities.length === 2) {
+              activity = selectedActivities.join(" and ");
+            } else {
+              activity =
+                selectedActivities.slice(0, -1).join(", ") +
+                " and " +
+                selectedActivities[selectedActivities.length - 1];
+            }
             const comment = document.getElementById("comment").value.trim();
 
             if (!fullName || !suburb || !postcode || selectedActivities.length === 0) {
@@ -463,7 +477,7 @@
                 currentEmail =
                     `Dear Local Member,
 
-      I am writing as a resident of ${suburb}, NSW, and as someone who participates in ${activity.toLowerCase()}, to request your support in advocating for a New South Wales Government rebate program for independently tested personal shark deterrent devices for surfers, divers, spearfishers and other ocean users.
+      I am writing as a resident of ${suburb}, NSW, and as someone who regularly participates in ${activity.toLowerCase()}, to request your support in advocating for a New South Wales Government rebate program for independently tested personal shark deterrent devices for surfers, divers, spearfishers and other ocean users.
 
       Recent shark incidents across NSW have understandably increased concern within coastal communities. While no deterrent can completely eliminate risk, there is growing evidence that certain electronic shark deterrent devices can significantly reduce the likelihood of a shark bite.
 
